@@ -1,0 +1,111 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "New Collection",
+    "contact": {}
+  },
+  "host": "org3b098497.api.crm6.dynamics.com",
+  "basePath": "/api/data/v9.2",
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "{DefaultParameterValue}/",
+      "scopes": {}
+    }
+  },
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/accounts": {
+      "get": {
+        "summary": "New Request",
+        "tags": [
+          "Misc"
+        ],
+        "operationId": "NewRequest",
+        "deprecated": false,
+        "produces": [
+          "application/json"
+        ],
+        "consumes": [
+          "application/json; charset=utf-8"
+        ],
+        "parameters": [
+          {
+            "name": "$select",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "OData-MaxVersion",
+            "in": "header",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "description": ""
+          },
+          {
+            "name": "OData-Version",
+            "in": "header",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "description": ""
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": false,
+            "enum": [
+              "application/json; charset=utf-8"
+            ],
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Prefer",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "headers": {}
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    {
+      "oauth2": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "Misc",
+      "description": ""
+    }
+  ]
+}

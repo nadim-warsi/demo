@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "version": "1.0",
-    "title": "New Collection",
+    "title": "account",
     "contact": {}
   },
   "host": "org3b098497.api.crm6.dynamics.com",
@@ -19,11 +19,11 @@
   "paths": {
     "/accounts": {
       "get": {
-        "summary": "New Request",
+        "summary": "account",
         "tags": [
           "Misc"
         ],
-        "operationId": "NewRequest",
+        "operationId": "account",
         "deprecated": false,
         "produces": [
           "application/json"
@@ -35,6 +35,13 @@
           {
             "name": "$select",
             "in": "query",
+            "required": true,
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "Authorization",
+            "in": "header",
             "required": true,
             "type": "string",
             "description": ""

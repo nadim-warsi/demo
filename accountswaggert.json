@@ -8,7 +8,7 @@
   "host": "org3b098497.api.crm6.dynamics.com",
   "basePath": "/api/data/v9.2",
   "schemes": [
-    "https"
+    "https","http"
   ],
   "consumes": [
     "application/json"

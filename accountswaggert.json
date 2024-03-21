@@ -7,14 +7,6 @@
   },
   "host": "org3b098497.api.crm6.dynamics.com",
   "basePath": "/api/data/v9.2",
-  "securityDefinitions": {
-    "oauth2": {
-      "type": "oauth2",
-      "flow": "implicit",
-      "authorizationUrl": "{DefaultParameterValue}/",
-      "scopes": {}
-    }
-  },
   "schemes": [
     "https"
   ],
@@ -97,11 +89,6 @@
       }
     }
   },
-  "security": [
-    {
-      "oauth2": []
-    }
-  ],
   "tags": [
     {
       "name": "Misc",

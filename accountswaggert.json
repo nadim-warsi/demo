@@ -40,13 +40,6 @@
             "description": ""
           },
           {
-            "name": "Authorization",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
             "name": "OData-MaxVersion",
             "in": "header",
             "required": true,
@@ -74,13 +67,6 @@
           },
           {
             "name": "Accept",
-            "in": "header",
-            "required": true,
-            "type": "string",
-            "description": ""
-          },
-          {
-            "name": "Prefer",
             "in": "header",
             "required": true,
             "type": "string",
